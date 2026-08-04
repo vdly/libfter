@@ -20,19 +20,19 @@ This project is a rite of passage of understanding and mastering the fundamental
 
 ### To create libft.a, run:
 
-* __make__
-* __make all__
-* __make libft.a__
+* `__make__`
+* `__make all__`
+* `__make libft.a__`
 
 ### To remove all object files/library, run:
 
-* __make clean__	- clear all (\*.o) files
+* `__make clean__`	- clear all (\*.o) files
 
-* __make flcean__	- clear all (\*.o) files and library
+* `__make flcean__`	- clear all (\*.o) files and library
 
 ### To remake object files and library:
 
-* __make re__
+* `__make re__`
 
 
 # Resources
