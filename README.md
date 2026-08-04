@@ -38,7 +38,6 @@ This project is a rite of passage of understanding and mastering the fundamental
 # Resources
 * https://linux.die.net/man/
 * https://www.geeksforgeeks.org/
-* github.com
 * AI was also use to further understanding of project
 
 
