@@ -36,37 +36,37 @@ This project is a rite of passage of understanding and mastering the fundamental
 
 
 # Resources
-* [https://linux.die.net/man/]
-* [https://www.geeksforgeeks.org/]
-* [github.com]
+* https://linux.die.net/man/
+* https://www.geeksforgeeks.org/
+* github.com
 * AI was also use to further understanding of project
 
 
 ## Functions
 
-ft_alnum	- a function that checks if `c` is alphanumeric
+* ft_alnum	- a function that checks if `c` is alphanumeric
 
-ft_atoi		- a function that converts ascii character to integer
+* ft_atoi		- a function that converts ascii character to integer
 
-ft_bzero	- a function that takes in memory it's pointing to and erases `n` bytes
+* ft_bzero	- a function that takes in memory it's pointing to and erases `n` bytes
 
-ft_isalpha	- a function that checks if `c` is (A - Z) && (a - z)
+* ft_isalpha	- a function that checks if `c` is (A - Z) && (a - z)
 
-ft_isascii	- a function that checks if `c` is an ascii character
+* ft_isascii	- a function that checks if `c` is an ascii character
 
-ft_isdigit	- a function that checks if `c` is a digit 
+* ft_isdigit	- a function that checks if `c` is a digit 
 
-ft_isprint	- a function that checks if `c` is a printable character
+* ft_isprint	- a function that checks if `c` is a printable character
 
-ft_memcpy	- a function that copies `n` bytes from memory `src` to memory `dest`
+* ft_memcpy	- a function that copies `n` bytes from memory `src` to memory `dest`
 
-ft_memset	- a function that fills `n` bytes of the memory area pointed to by `s` with `c`
+* ft_memset	- a function that fills `n` bytes of the memory area pointed to by `s` with `c`
 
-ft_strlcpy	- a function that copies `n` bytes from `src` to `dest`, ensuring NULL-terminated
+* ft_strlcpy	- a function that copies `n` bytes from `src` to `dest`, ensuring NULL-terminated
 
-ft_strlen	- a function that calculates the length of `s`
+* ft_strlen	- a function that calculates the length of `s`
 
-ft_tolower	- a function that returns lowercase equivalent if uppercase
+* ft_tolower	- a function that returns lowercase equivalent if uppercase
 
-ft_toupper	- a function that returns uppercase equivalent if lowercase
+* ft_toupper	- a function that returns uppercase equivalent if lowercase
 
