@@ -4,39 +4,7 @@ This project has been created as part of the 42 curriculum by JODEHII.
 
 This project is a rite of passage of understanding and mastering the fundamentals in C! Libft is my own recreation of some functions from the C Standard Library (libc). This includes functions for:
 
-**Character Checks**
-- ft_isalpha
-- ft_isdigit
-- ft_isalnum
-- (...)
-
-**Memory Manipulation**
-- ft_memset
-- ft_memcpy
-- ft_memmove
-- (...)
-
-**String Manippulation**
-- ft_strlen
-- ft_strcpy
-- ft_strchr
-- (...)
-
-**Memmory Management**
-- ft_calloc
-- ft_strdup
-- ft_substr
-- (...)
-
-**File Descriptors**
-- ft_putchar_fd
-- ft_putnbr_fd
-- ft_putendl_fd
-- (...)
-
-**Linked List**
-
-
+**Character Checks, Memory Manipulation, String Manipulation, Memory Management, File Descriptors, and Linked Lists**
 
 ## Instructions
 
