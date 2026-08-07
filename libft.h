@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 12:18:15 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/04 16:38:59 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/05 16:13:39 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
-# include <bsd/string.h>
+# include <string.h>
 
 int		ft_alnum(int c);
 int		ft_atoi(const char *nptr);
