@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/07 20:39:11 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/10 19:47:50 by jodehii          ###   ########.fr       */
+/*   Created: 2026/08/08 19:13:52 by jodehii           #+#    #+#             */
+/*   Updated: 2026/08/08 21:07:34 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_memcmp(void *dest, const void *src, size_t n)
 {
-	unsigned char	*str;
-	int				i;
+	unsigned char	*destt;
+	unsigned char	*srct;
+	size_t			i;
 
+	destt = (unsigned char *)dest;
+	srct = (unsigned char *)src;
 	i = 0;
-	str = (unsigned char *)s;
+	if (!dest || !src)
+		return (0);
 	while (i < n)
 	{
-		if (str[i] == (unsigned char)c)
-			return (&str[i]);
+		if (destt[i] != srct[i])
+			return (destt[i] - srct[i]);
 		i++;
 	}
 	return (0);
@@ -30,9 +34,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int	main(void)
 // {
-// 	char	str[10] = "monkey";
+// 	char	dest[15] = "melon";
 
-// 	printf("address of n = %p\n", &str[2]);
-// 	printf("ft_memchr to n = %p\n", ft_memchr(str, 'n', 5));
-// 	return (0);
+// 	printf("dest : %s\n", dest);
+// 	printf("ft_memcmp : %d\n", ft_memcmp(dest, "melzn", 5));
 // }
