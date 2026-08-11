@@ -31,18 +31,12 @@ void	*ft_calloc(size_t nmemb, size_t size)
 // {
 // 	int	*arr;
 // 	int	i;
-// 	int	all_zero;
 
 // 	arr = (int *)ft_calloc(5, sizeof(int));
 // 	i = 0;
 // 	printf("values in memory allocated: ");
 // 	while (i < 5)
-// 	{
-// 		printf("%d ", arr[i]);
-// 		if (arr[i] != 0)
-// 			all_zero = 0;
-// 		i++;
-// 	}
+// 		printf("%d ", arr[i++]);
 // 	printf("\n");
 // 	free(arr);
 // 	return (0);
