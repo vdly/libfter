@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 20:39:11 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/10 19:47:50 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/11 17:04:47 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (&str[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 // int	main(void)

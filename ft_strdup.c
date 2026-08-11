@@ -1,41 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/08 19:13:52 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/11 17:04:57 by jodehii          ###   ########.fr       */
+/*   Created: 2026/08/11 17:20:46 by jodehii           #+#    #+#             */
+/*   Updated: 2026/08/11 17:44:46 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(void *dest, const void *src, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	unsigned char	*destt;
-	unsigned char	*srct;
-	size_t			i;
+	int		i;
+	int		len;
+	char	*s2;
 
-	destt = (unsigned char *)dest;
-	srct = (unsigned char *)src;
 	i = 0;
-	if (!dest || !src)
+	len = ft_strlen(s1);
+	s2 = malloc(sizeof(char) * (len + 1));
+	if (!s2)
 		return (NULL);
-	while (i < n)
+	while (s1[i])
 	{
-		if (destt[i] != srct[i])
-			return (destt[i] - srct[i]);
+		s2[i] = s1[i];
 		i++;
 	}
-	return (NULL);
+	s2[i] = '\0';
+	return (s2);
 }
 
 // int	main(void)
 // {
-// 	char	dest[15] = "melon";
+// 	const char	*hi = "applebees!";
+// 	char		*str;
 
-// 	printf("dest : %s\n", dest);
-// 	printf("ft_memcmp : %d\n", ft_memcmp(dest, "melzn", 5));
+// 	str = ft_strdup(hi);
+// 	printf("pointer to original str : %p\n", &hi);
+// 	printf("str : %s\n", hi);
+// 	printf("pointer to dup str : %p\n", str);
+// 	printf("dup str : %s\n", str);
+// 	free (str);
 // }

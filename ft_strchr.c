@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 19:36:09 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/07 20:08:06 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/11 17:05:41 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 	temp = (char *)s;
 	i = 0;
 	if (!temp)
-		return (NULL);
+		return (0);
 	while (temp[i])
 	{
 		if (temp[i] == c)
