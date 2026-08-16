@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 12:18:15 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/11 17:45:38 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/16 17:33:51 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,11 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
+typedef struct a_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 #endif
