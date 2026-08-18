@@ -6,11 +6,15 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 22:24:22 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/16 19:02:59 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/18 15:42:11 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// len = s_len - start; *to prevent allocating extra space in the heap 
+//						than needed*
+//						*only takes exactly what you need from the heap*
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -23,16 +27,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
-	{
-		sub = (char *)ft_calloc(1, 1);
-		return (sub);
-	}
+		return ((char *)ft_calloc(1, 1));
 	if (len > s_len - start)
 		len = s_len - start;
 	sub = ft_calloc(len + 1, sizeof(char));
 	if (!sub)
 		return (NULL);
-	while (i < len && s[start + i] && start < s_len)
+	while (i < len)
 	{
 		sub[i] = s[start + i];
 		i++;

@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 18:12:47 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/18 12:22:42 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/18 12:43:18 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int	main()
 // {
-// 	char	str[] = "   times i would like some peace    ";
+// 	char	str[] = "   i would like some peace n quiet    ";
 // 	char	set[] = " ";
 
 // 	printf("test:%s|\n", ft_strtrim(str, set));
