@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:14:15 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/12 18:21:29 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/14 17:51:33 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,7 @@ int	ft_atoi(const char *nptr)
 		result = (result * 10) + (nptr[i] - '0');
 		i++;
 	}
-	result = result * negative;
-	return (result);
+	return (result * negative);
 }
 
 // int	main(int argc, char **argv)

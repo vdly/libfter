@@ -6,26 +6,11 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 18:12:47 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/16 19:40:32 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/18 12:22:42 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// char	*ft_strtrim(const char *s1, const char *set)
-// {
-// 	size_t	start;
-// 	size_t	end;
-// 	size_t	len;
-
-// 	if (!s1 || !set)
-// 		return (NULL);
-// 	start = 0;
-// 	len = ft_strlen(s1);
-// 	end = len;
-// 	if (set == 0)
-// 		return (ft_strdup(s1));
-// }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -45,10 +30,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, start, end - start));
 }
 
-int	main()
-{
-	char	str[] = "at times i would like some peace at";
-	char	set[] = "at";
+// int	main()
+// {
+// 	char	str[] = "   times i would like some peace    ";
+// 	char	set[] = " ";
 
-	printf("test:%s|\n", ft_strtrim(str, set));
-}
+// 	printf("test:%s|\n", ft_strtrim(str, set));
+// }
