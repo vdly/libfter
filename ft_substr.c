@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 22:24:22 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/12 17:44:18 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/16 19:02:59 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,21 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t			i;
-	unsigned int	s_len;
-	char			*sub;
+	size_t	i;
+	size_t	s_len;
+	char	*sub;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s);
+	if (start >= s_len)
+	{
+		sub = (char *)ft_calloc(1, 1);
+		return (sub);
+	}
+	if (len > s_len - start)
+		len = s_len - start;
 	sub = ft_calloc(len + 1, sizeof(char));
 	if (!sub)
 		return (NULL);
@@ -30,6 +39,34 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (sub);
 }
+
+// char	*ft_substr(char const *s, unsigned int start, size_t len)
+// {
+// 	size_t	i;
+// 	size_t	j;
+// 	char	*sub;
+
+// 	i = 0;
+// 	j = 0;
+// 	if (!s)
+// 		return (NULL);
+// 	if (len > ft_strlen(s))
+// 		len = ft_strlen(s);
+// 	sub = (char *)malloc(sizeof(char) * (len + 1));
+// 	if (!sub)
+// 		return (NULL);
+// 	while (s[i])
+// 	{
+// 		if (i >= start && j < len)
+// 		{
+// 			sub[j] = s[i];
+// 			j++;
+// 		}
+// 		i++;
+// 	}
+// 	sub[j] = '\0';
+// 	return (sub);
+// }
 
 // int	main(void)
 // {
