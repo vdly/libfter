@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/19 15:04:29 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/19 23:53:00 by jodehii          ###   ########.fr       */
+/*   Created: 2026/08/19 21:39:44 by jodehii           #+#    #+#             */
+/*   Updated: 2026/08/19 23:51:01 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	unsigned int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 
-// int	main(int argc, char **argv)
+//void	leon_test(unsigned int index, char *str)
 // {
-// 	int	fd;
+// 	printf("INDEX: %d\n", index);
+// 	printf("STR: %s\n", str);
+// 	printf("IM GIVEN: %s\n", str - index);
+// }
 
-// 	fd = open("test.txt", O_RDWR);
-// 	if (argc == 2)
-// 		ft_putendl_fd(argv[1], fd);
-// 	else
-// 		printf("girl. enter valid input");
-// 	return (0);
-//  }
+// int main(int argc, char **argv)
+// {
+// 	if (argc != 2)
+// 		return 0;
+// 	ft_striteri(argv[1], leon_test);
+// }
