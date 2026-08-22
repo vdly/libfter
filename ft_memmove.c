@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 22:19:25 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/11 22:19:30 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/22 19:55:05 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t			i;
-
-	i = 0;
 	if (dest > src)
 	{
 		while (n > 0)

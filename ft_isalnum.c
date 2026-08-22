@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_alnum.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/07 20:39:11 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/22 19:55:42 by jodehii          ###   ########.fr       */
+/*   Created: 2026/07/27 16:17:59 by jodehii           #+#    #+#             */
+/*   Updated: 2026/08/12 18:22:29 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_alnum(int c)
 {
-	unsigned char	*str;
-	size_t			i;
-
-	i = 0;
-	str = (unsigned char *)s;
-	while (i < n)
-	{
-		if (str[i] == (unsigned char)c)
-			return (&str[i]);
-		i++;
-	}
-	return (NULL);
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
 
 // int	main(void)
 // {
-// 	char	str[10] = "monkey";
-
-// 	printf("address of n = %p\n", &str[2]);
-// 	printf("ft_memchr to n = %p\n", ft_memchr(str, 'n', 5));
+// 	printf("ft_alnum('a') = %d\n", ft_alnum('a'));
+// 	printf("ft_alnum('7') = %d\n", ft_alnum('7'));
+// 	printf("ft_alnum('!') = %d\n", ft_alnum('!'));
 // 	return (0);
 // }
