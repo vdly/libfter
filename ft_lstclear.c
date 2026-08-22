@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/21 20:09:21 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/22 17:01:06 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/22 17:13:05 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	*lst = NULL;
 }
 
-void	del(void *content)
-{
-	free(content);
-}
+// void	del(void *content)
+// {
+// 	free(content);
+// }
 
 // int	main(void)
 // {
