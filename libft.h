@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 12:18:15 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/21 01:06:10 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/21 20:14:26 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,10 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 char	*ft_itoa(int n);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstclear(t_list **lst, void (*del)(void *));
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(void *dest, const void *src, size_t n);

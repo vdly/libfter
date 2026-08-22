@@ -6,7 +6,7 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 19:13:52 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/11 17:04:57 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/22 16:54:24 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ int	ft_memcmp(void *dest, const void *src, size_t n)
 	srct = (unsigned char *)src;
 	i = 0;
 	if (!dest || !src)
-		return (NULL);
+		return (0);
 	while (i < n)
 	{
 		if (destt[i] != srct[i])
 			return (destt[i] - srct[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
 // int	main(void)

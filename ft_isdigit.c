@@ -6,13 +6,13 @@
 /*   By: jodehii <jodehii@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 16:23:29 by jodehii           #+#    #+#             */
-/*   Updated: 2026/08/14 16:02:25 by jodehii          ###   ########.fr       */
+/*   Updated: 2026/08/22 16:55:23 by jodehii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
